@@ -1,6 +1,6 @@
-counter_tb.o: \
+counter_tb1.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/SDKSettings.json \
-  ../counter_tb.cpp Vcounter.h \
+  ../counter_tb1.cpp Vcounter.h \
   /opt/homebrew/Cellar/verilator/5.052/share/verilator/include/verilated.h \
   /opt/homebrew/Cellar/verilator/5.052/share/verilator/include/verilated_config.h \
   /opt/homebrew/Cellar/verilator/5.052/share/verilator/include/verilatedos.h \
