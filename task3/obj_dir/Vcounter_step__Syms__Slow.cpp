@@ -1,9 +1,9 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "Vcounter__pch.h"
+#include "Vcounter_step__pch.h"
 
-Vcounter__Syms::Vcounter__Syms(VerilatedContext* contextp, const char* namep, Vcounter* modelp)
+Vcounter_step__Syms::Vcounter_step__Syms(VerilatedContext* contextp, const char* namep, Vcounter_step* modelp)
     : VerilatedSyms{contextp}
     // Setup internal state of the Syms class
     , __Vm_modelp{modelp}
@@ -22,7 +22,7 @@ Vcounter__Syms::Vcounter__Syms(VerilatedContext* contextp, const char* namep, Vc
     TOP.__Vconfigure(true);
 }
 
-Vcounter__Syms::~Vcounter__Syms() {
+Vcounter_step__Syms::~Vcounter_step__Syms() {
     // Tear down scopes
     // Tear down sub module instances
 }

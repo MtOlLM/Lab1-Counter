@@ -5,21 +5,21 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef VERILATED_VCOUNTER_H_
-#define VERILATED_VCOUNTER_H_  // guard
+#ifndef VERILATED_VCOUNTER_STEP_H_
+#define VERILATED_VCOUNTER_STEP_H_  // guard
 
 #include "verilated.h"
 
-class Vcounter__Syms;
-class Vcounter___024root;
+class Vcounter_step__Syms;
+class Vcounter_step___024root;
 class VerilatedVcdC;
 
 // This class is the main interface to the Verilated model
-class alignas(VL_CACHE_LINE_BYTES) Vcounter VL_NOT_FINAL : public VerilatedModel {
-    friend class Vcounter__Syms;
+class alignas(VL_CACHE_LINE_BYTES) Vcounter_step VL_NOT_FINAL : public VerilatedModel {
+    friend class Vcounter_step__Syms;
   private:
     // Symbol table holding complete model state (owned by this class)
-    Vcounter__Syms* const vlSymsp;
+    Vcounter_step__Syms* const vlSymsp;
     // Evaluation loop
     VerilatedEvalLoop m_evalLoop;
 
@@ -35,7 +35,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vcounter VL_NOT_FINAL : public VerilatedModel
     VL_IN8(&clk,0,0);
     VL_IN8(&rst,0,0);
     VL_IN8(&ld,0,0);
-    VL_IN8(&v,7,0);
     VL_OUT8(&count,7,0);
 
     // CELLS
@@ -44,19 +43,19 @@ class alignas(VL_CACHE_LINE_BYTES) Vcounter VL_NOT_FINAL : public VerilatedModel
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
-    Vcounter___024root* const rootp;
+    Vcounter_step___024root* const rootp;
 
     // CONSTRUCTORS
     /// Construct the model; called by application code
     /// If contextp is null, then the model will use the default global context
     /// If name is "", then makes a wrapper with a
     /// single model invisible with respect to DPI scope names.
-    explicit Vcounter(VerilatedContext* contextp, const char* name = "TOP");
-    explicit Vcounter(const char* name = "TOP");
+    explicit Vcounter_step(VerilatedContext* contextp, const char* name = "TOP");
+    explicit Vcounter_step(const char* name = "TOP");
     /// Destroy the model; called (often implicitly) by application code
-    virtual ~Vcounter();
+    virtual ~Vcounter_step();
   private:
-    VL_UNCOPYABLE(Vcounter);  ///< Copying not allowed
+    VL_UNCOPYABLE(Vcounter_step);  ///< Copying not allowed
 
   public:
     // API METHODS
